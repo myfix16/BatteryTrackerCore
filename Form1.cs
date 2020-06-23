@@ -20,6 +20,9 @@ namespace BatteryTrackerWinform
             InitializeComponent();
             ShowInTaskbar = false;
             WindowState = FormWindowState.Minimized;
+
+            // Set the percentage on setup.
+            timer1_Tick(null, null);
         }
 
         private void toolStripMenuItemExit_Click(object sender, EventArgs e)
