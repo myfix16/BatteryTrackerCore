@@ -118,13 +118,304 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>icons\100.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dark_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>icons\98.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dark_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>icons\99.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dark_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_100.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_17.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_18.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_19.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_20.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_21.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_22.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_23.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_24.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_25.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_26.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_27.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_28.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_29.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_30.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_31.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_32.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_33.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_34.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_35.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_36.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_37.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_38.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_39.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_40.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_41.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_42.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_43.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_44.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_45.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_46.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_47.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_48.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_49.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_50.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_51.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_52.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_53.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_54.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_55.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_56.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_57.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_58.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_59.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_60.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_61.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_62.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_63.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_64.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_65.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_66.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_67.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_68.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_69.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_70.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_71.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_72.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_73.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_74.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_75.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_76.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_77.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_78.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_79.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_80.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_81.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_82.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_83.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_84.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_85.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_86.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_87.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_88.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_89.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_90.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_91.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_92.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_93.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_94.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_95.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_96.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_97.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_98.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>icons\dark_99.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

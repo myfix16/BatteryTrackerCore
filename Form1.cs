@@ -14,6 +14,7 @@ namespace BatteryTrackerWinform
     public partial class Form1 : Form
     {
         int powerPercentage;
+        string colorState = "dark";
 
         public Form1()
         {
@@ -39,8 +40,9 @@ namespace BatteryTrackerWinform
 
             #region Update notifyIcon
             mainNotifyIcon.Icon = (Icon)typeof(ResourceIcon)
-                .GetProperty($"_{powerPercentage}")
+                .GetProperty($"{colorState}_{powerPercentage}")
                 .GetValue(null, null);
+            mainNotifyIcon.Text = $"remaining: {powerPercentage}%";
             #endregion
         }
     }
