@@ -1,10 +1,10 @@
-## Battery Tracer
+## Battery Tracker
 ![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png) ![notfull](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)
 ### Function
-The program will add an icon on the taskbar showing current battery percentage.
+The program will scan current battery percentage every 30s and then show it on the taskbar showing .
 ### Features
-1. Use different transparent icos for different percentages, thus looks more harmonious with the taskbar (it has no black background).
-2. Support Light and Dark mode.
+1. Use different transparent icons for different percentages, thus looks more harmonious with the taskbar (it has no black background).
+2. It will automatically switch icon color when user change to Light/Dark mode. ✨
 ### Contribute
 Any coutribute is highly welcomed.
 ### Credits

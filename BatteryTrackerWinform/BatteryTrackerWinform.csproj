@@ -5,6 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>icons\logo.ico</ApplicationIcon>
+    <Version>1.1</Version>
+    <Authors>myfix16</Authors>
+    <Company>myfix16</Company>
   </PropertyGroup>
 
   <ItemGroup>
