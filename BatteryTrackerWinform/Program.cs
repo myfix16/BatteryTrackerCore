@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BatteryTrackerWinform
@@ -17,7 +14,8 @@ namespace BatteryTrackerWinform
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var trayIcon = new TrayIcon();
+            Application.Run();
         }
     }
 }
