@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="RegistryMonitor">
+      <HintPath>..\..\..\Scripts\ScriptCS\RegistryMonitor\bin\Release\netcoreapp3.1\RegistryMonitor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="ResourceIcon.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
