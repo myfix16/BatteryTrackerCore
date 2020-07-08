@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BatteryTrackerWinform {
+namespace BatteryTracker {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace BatteryTrackerWinform {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BatteryTrackerWinform.ResourceIcon", typeof(ResourceIcon).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BatteryTracker.ResourceIcon", typeof(ResourceIcon).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

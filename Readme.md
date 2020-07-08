@@ -1,5 +1,5 @@
 ## Battery Tracker
-![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png) ![notfull](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)
+![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png)Full Charged ![notfull](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)
 ### Function
 The program will scan current battery percentage every 30s and then show it on the taskbar showing .
 ### Features
@@ -8,6 +8,6 @@ The program will scan current battery percentage every 30s and then show it on t
 ### Contribute
 Any coutribute is highly welcomed.
 ### Credits
-The project partially refers to 
+The project partially refers to
 1. Kenneth Schnall's [percentage](https://github.com/kas/percentage)
 2. Thomas Freudenberg's [RegistryMonitor](https://www.codeproject.com/Articles/4502/RegistryMonitor-a-NET-wrapper-class-for-RegNotifyC)❤
