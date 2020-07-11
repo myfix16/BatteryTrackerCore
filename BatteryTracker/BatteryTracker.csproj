@@ -8,6 +8,7 @@
     <Version>1.1</Version>
     <Authors>myfix16</Authors>
     <Company>myfix16</Company>
+    <Description>The program adds a tray icon that shows battery percentage.</Description>
   </PropertyGroup>
 
   <ItemGroup>

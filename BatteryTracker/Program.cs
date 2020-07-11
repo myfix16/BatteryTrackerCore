@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
-namespace BatteryTrackerWinform
+namespace BatteryTracker
 {
     static class Program
     {
