@@ -11,3 +11,5 @@ Any contribution is highly welcomed.
 The project partially refers to
 1. Kenneth Schnall's [percentage](https://github.com/kas/percentage)
 2. Thomas Freudenberg's [RegistryMonitor](https://www.codeproject.com/Articles/4502/RegistryMonitor-a-NET-wrapper-class-for-RegNotifyC)❤
+### Prerequisites
+The project requires .NET Core 3.1, you can download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1). Later I will upload .NET Framework version.
