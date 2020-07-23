@@ -1,5 +1,6 @@
 ## Battery Tracker
-![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png)Full Charged ![not full](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)
+![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png)Full Charged <br></br>
+![not full](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)Charging/Using
 ### Function
 The program will scan current battery percentage every 30s and then show it on the taskbar showing .
 ### Features
