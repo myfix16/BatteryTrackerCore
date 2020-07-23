@@ -8,15 +8,20 @@ namespace BatteryTracker
 {
     class TrayIcon
     {
+        #region Fields and Properties
         NotifyIcon MainNotifyIcon { get; }
         ContextMenuStrip MainContextMenuStrip { get; }
         ToolStripMenuItem ToolStripMenuItemExit { get; }
         Timer MainTimer { get; }
 
+        /// <summary>
+        /// Remaining battery percentage.
+        /// </summary>
         int powerPercentage;
 
         const string subKeyName = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize";
         string colorState = "dark";
+        #endregion
 
         public TrayIcon()
         {
@@ -53,6 +58,9 @@ namespace BatteryTracker
             monitor.Start();
         }
 
+        /// <summary>
+        /// The event handler of registry changed event.
+        /// </summary>
         private void OnRegChanged(object sender, EventArgs e)
         {
             DetectColorMode();
@@ -63,15 +71,14 @@ namespace BatteryTracker
         {
             MainNotifyIcon.Visible = false;
             MainNotifyIcon.Dispose();
-            //Application.Exit();
             Environment.Exit(Environment.ExitCode);
         }
 
-        private void MainTimer_Tick(object sender, EventArgs e)
-        {
-            UpdateIcon();
-        }
+        private void MainTimer_Tick(object sender, EventArgs e) => UpdateIcon();
 
+        /// <summary>
+        /// A function that detects remaining percentage and updates the tray icon.
+        /// </summary>
         private void UpdateIcon()
         {
             powerPercentage = Convert.ToInt16(SystemInformation.PowerStatus.BatteryLifePercent * 100);
@@ -81,6 +88,9 @@ namespace BatteryTracker
             MainNotifyIcon.Text = $"remaining: {powerPercentage}%";
         }
 
+        /// <summary>
+        /// A function that detect current color mode by look up in the corresponding registry key.
+        /// </summary>
         private void DetectColorMode()
         {
             using var key = Registry.CurrentUser.OpenSubKey(subKeyName);
