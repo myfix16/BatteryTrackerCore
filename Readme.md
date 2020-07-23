@@ -1,6 +1,6 @@
-## Battery Tracker
-![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png)Full Charged <br></br>
-![not full](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png)Charging/Using
+﻿## Battery Tracker
+![full](https://raw.githubusercontent.com/myfix16/BatteryTrackerWinform/master/showcase1.png) Full Charged <br></br>
+![not full](https://github.com/myfix16/BatteryTrackerWinform/raw/master/showcase2.png) Charging/Using
 ### Function
 The program will scan current battery percentage every 30s and then show it on the taskbar showing .
 ### Features
@@ -13,4 +13,6 @@ The project partially refers to
 1. Kenneth Schnall's [percentage](https://github.com/kas/percentage)
 2. Thomas Freudenberg's [RegistryMonitor](https://www.codeproject.com/Articles/4502/RegistryMonitor-a-NET-wrapper-class-for-RegNotifyC)❤
 ### Prerequisites
-The project requires .NET Core 3.1, you can download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1). Later I will upload .NET Framework version.
+The project has following prerequisites:
+
+	* .NET Core 3.1 Desktop Runtime, you can download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).
