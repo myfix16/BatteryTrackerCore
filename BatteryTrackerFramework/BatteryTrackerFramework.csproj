@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82A4DC25-C28A-46BC-AA3A-2337BC9D5315}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BatteryTrackerFramework</RootNamespace>
+    <AssemblyName>BatteryTrackerFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RegistryMonitor">
+      <HintPath>..\..\..\Scripts\ScriptCS\RegistryMonitor\bin\Release\netcoreapp3.1\RegistryMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceIcon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceIcon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TrayIcon.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ResourceIcon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceIcon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_13.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_15.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_18.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_19.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_20.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_22.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_23.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_25.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_26.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_27.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_28.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_30.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_31.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_34.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_35.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_36.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_37.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_38.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_39.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_40.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_41.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_42.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_43.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_44.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_45.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_46.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_47.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_49.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_50.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_51.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_52.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_53.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_54.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_55.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_56.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_57.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_58.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_59.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_60.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_61.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_62.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_63.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_65.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_66.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_67.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_68.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_69.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_70.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_71.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_72.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_73.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_74.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_75.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_76.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_77.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_78.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_79.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_80.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_81.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_82.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_83.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_84.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_85.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_86.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_87.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_88.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_89.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_90.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_91.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_92.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_93.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_94.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_95.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_96.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_97.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_98.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_99.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_100.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_13.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_15.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_18.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_19.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_20.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_22.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_23.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_25.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_26.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_27.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_28.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_30.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_31.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_34.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_35.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_36.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_37.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_38.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_39.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_40.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_41.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_42.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_43.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_44.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_45.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_46.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_47.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_49.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_50.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_51.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_52.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_53.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_54.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_55.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_56.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_57.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_58.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_59.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_60.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_61.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_62.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_63.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_65.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_66.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_67.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_68.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_69.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_70.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_71.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_72.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_73.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_74.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_75.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_76.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_77.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_78.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_79.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_80.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_81.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_82.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_83.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_84.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_85.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_86.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_87.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_88.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_89.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_90.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_91.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_92.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_93.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_94.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_95.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_96.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_97.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_98.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_99.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_100.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

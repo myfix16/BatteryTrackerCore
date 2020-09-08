@@ -9,26 +9,9 @@ namespace BatteryTracker
     class TrayIcon
     {
         #region Fields and Properties
-
         NotifyIcon MainNotifyIcon { get; }
-
-        /// <summary>
-        /// The main entry of context menu.
-        /// </summary>
         ContextMenuStrip MainContextMenuStrip { get; }
-
-        ToolStripMenuItem ChangeScanIntervalTerm { get; }
-
-        ContextMenuStrip ScanIntervalMenuStrip { get; }
-
-        ToolStripMenuItem HalfAMinute { get; }
-
-        ToolStripMenuItem OneMinute { get; }
-
-        ToolStripMenuItem TwoMinutes { get; }
-
-        ToolStripMenuItem ExitTerm { get; }
-
+        ToolStripMenuItem ToolStripMenuItemExit { get; }
         Timer MainTimer { get; }
 
         /// <summary>
@@ -37,51 +20,29 @@ namespace BatteryTracker
         int powerPercentage;
 
         const string subKeyName = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize";
-
         string colorState = "dark";
-
         #endregion
 
         public TrayIcon()
         {
             MainNotifyIcon = new NotifyIcon();
             MainContextMenuStrip = new ContextMenuStrip();
-            ChangeScanIntervalTerm = new ToolStripMenuItem();
-            ScanIntervalMenuStrip = new ContextMenuStrip();
-            HalfAMinute = new ToolStripMenuItem();
-            OneMinute = new ToolStripMenuItem();
-            TwoMinutes = new ToolStripMenuItem();
-            ExitTerm = new ToolStripMenuItem();
+            ToolStripMenuItemExit = new ToolStripMenuItem();
             MainTimer = new Timer();
 
             // initialize MainContextMenuStrip.
-            MainContextMenuStrip.Items.AddRange(new ToolStripItem[] { ChangeScanIntervalTerm, ExitTerm });
+            MainContextMenuStrip.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemExit });
 
-            // initialize ChangeScanIntervalTerm.
-            HalfAMinute.Text = "30s";
-            HalfAMinute.Click += (o, e) => MainTimer.Interval = 30000;
-
-            OneMinute.Text = "60s";
-            OneMinute.Click += (o, e) => MainTimer.Interval = 60000;
-
-            TwoMinutes.Text = "2m";
-            TwoMinutes.Click += (o, e) => MainTimer.Interval = 120000;
-
-            ScanIntervalMenuStrip.Items.AddRange(new ToolStripItem[] { HalfAMinute, OneMinute, TwoMinutes });
-
-            ChangeScanIntervalTerm.Text = "Scan Interval";
-            ChangeScanIntervalTerm.DropDown = ScanIntervalMenuStrip;
-
-            // initialize ExitTerm.
-            ExitTerm.Text = "Exit";
-            ExitTerm.Click += new EventHandler(ToolStripMenuItemExit_Click);
+            // initialize ToolStripMenuItemExit.
+            ToolStripMenuItemExit.Text = "Exit";
+            ToolStripMenuItemExit.Click += new EventHandler(ToolStripMenuItemExit_Click);
 
             // Initialize MainNotifyIcon.
             MainNotifyIcon.ContextMenuStrip = MainContextMenuStrip;
             MainNotifyIcon.Visible = true;
 
             // Initialize MainTimer.
-            MainTimer.Tick += (o, e) => UpdateIcon();
+            MainTimer.Tick += new EventHandler(MainTimer_Tick);
             MainTimer.Interval = 30000;
             MainTimer.Start();
 
@@ -93,8 +54,7 @@ namespace BatteryTracker
             var monitor = new RegistryMonitor(
                 RegistryHive.CurrentUser,
                 subKeyName);
-
-            monitor.RegChanged += (o, e) => { DetectColorMode(); UpdateIcon(); };
+            monitor.RegChanged += new EventHandler(OnRegChanged);
             monitor.Start();
         }
 
@@ -117,17 +77,15 @@ namespace BatteryTracker
         private void MainTimer_Tick(object sender, EventArgs e) => UpdateIcon();
 
         /// <summary>
-        /// Detects remaining percentage and updates the tray icon.
+        /// A function that detects remaining percentage and updates the tray icon.
         /// </summary>
         private void UpdateIcon()
         {
             powerPercentage = Convert.ToInt16(SystemInformation.PowerStatus.BatteryLifePercent * 100);
-
             MainNotifyIcon.Icon = (Icon)typeof(ResourceIcon)
                 .GetProperty($"{colorState}_{powerPercentage}")
                 .GetValue(null, null);
-
-            MainNotifyIcon.Text = $"Scan Interval: {MainTimer.Interval/1000} s";
+            MainNotifyIcon.Text = $"remaining: {powerPercentage}%";
         }
 
         /// <summary>
