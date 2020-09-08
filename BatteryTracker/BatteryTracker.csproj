@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>preview</LangVersion>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>icons\logo.ico</ApplicationIcon>
     <Version>1.1</Version>
