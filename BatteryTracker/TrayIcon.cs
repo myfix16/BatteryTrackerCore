@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
+using System.Text.Unicode;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using RegistryUtils;
@@ -40,6 +42,8 @@ namespace BatteryTracker
 
         string colorState = "dark";
 
+        string path = "/BatteryTrackerConfig.cfg";
+
         #endregion
 
         public TrayIcon()
@@ -59,13 +63,13 @@ namespace BatteryTracker
 
             // initialize ChangeScanIntervalTerm.
             HalfAMinute.Text = "30s";
-            HalfAMinute.Click += (o, e) => MainTimer.Interval = 30000;
+            HalfAMinute.Click += (o, e) => ChangeScanInterval(30000);
 
             OneMinute.Text = "60s";
-            OneMinute.Click += (o, e) => MainTimer.Interval = 60000;
+            OneMinute.Click += (o, e) => ChangeScanInterval(60000);
 
             TwoMinutes.Text = "2m";
-            TwoMinutes.Click += (o, e) => MainTimer.Interval = 120000;
+            TwoMinutes.Click += (o, e) => ChangeScanInterval(120000);
 
             ScanIntervalMenuStrip.Items.AddRange(new ToolStripItem[] { HalfAMinute, OneMinute, TwoMinutes });
 
@@ -76,14 +80,25 @@ namespace BatteryTracker
             ExitTerm.Text = "Exit";
             ExitTerm.Click += new EventHandler(ToolStripMenuItemExit_Click);
 
-            // Initialize MainNotifyIcon.
-            MainNotifyIcon.ContextMenuStrip = MainContextMenuStrip;
-            MainNotifyIcon.Visible = true;
-
             // Initialize MainTimer.
             MainTimer.Tick += (o, e) => UpdateIcon();
-            MainTimer.Interval = 30000;
+
+            if (File.Exists(path))
+            {
+                using var file = new StreamReader(path);
+                MainTimer.Interval = int.Parse(file.ReadLine().Trim());
+            }
+            else
+            {
+                MainTimer.Interval = 30000;
+            }
+
             MainTimer.Start();
+
+            // Initialize MainNotifyIcon.
+            MainNotifyIcon.ContextMenuStrip = MainContextMenuStrip;
+            MainNotifyIcon.Text = $"Scan Interval: {MainTimer.Interval / 1000} s";
+            MainNotifyIcon.Visible = true;
 
             // Initialize color mode.
             DetectColorMode();
@@ -98,15 +113,6 @@ namespace BatteryTracker
             monitor.Start();
         }
 
-        /// <summary>
-        /// The event handler of registry changed event.
-        /// </summary>
-        private void OnRegChanged(object sender, EventArgs e)
-        {
-            DetectColorMode();
-            UpdateIcon();
-        }
-
         private void ToolStripMenuItemExit_Click(object sender, EventArgs e)
         {
             MainNotifyIcon.Visible = false;
@@ -114,7 +120,16 @@ namespace BatteryTracker
             Environment.Exit(Environment.ExitCode);
         }
 
-        private void MainTimer_Tick(object sender, EventArgs e) => UpdateIcon();
+        private void ChangeScanInterval(int newInterval)
+        {
+            MainTimer.Interval = newInterval;
+            MainNotifyIcon.Text = $"Scan Interval: {MainTimer.Interval / 1000} s";
+
+            // Write the scan interval into a config file.
+            using var file = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            using var config = new StreamWriter(file);
+            config.Write(newInterval);
+        }
 
         /// <summary>
         /// Detects remaining percentage and updates the tray icon.
@@ -126,8 +141,6 @@ namespace BatteryTracker
             MainNotifyIcon.Icon = (Icon)typeof(ResourceIcon)
                 .GetProperty($"{colorState}_{powerPercentage}")
                 .GetValue(null, null);
-
-            MainNotifyIcon.Text = $"Scan Interval: {MainTimer.Interval/1000} s";
         }
 
         /// <summary>

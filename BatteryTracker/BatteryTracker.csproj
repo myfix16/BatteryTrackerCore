@@ -10,6 +10,9 @@
     <Authors>myfix16</Authors>
     <Company>myfix16</Company>
     <Description>The program adds a tray icon that shows battery percentage.</Description>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <PackageReleaseNotes>Allow users to change scan interval.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
